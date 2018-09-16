@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>684</width>
+    <height>429</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QSint::Charts Demo</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QSint::PieChart" name="PieChart" native="true"/>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QSint::BarChartPlotter" name="ColumnChart" native="true"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QSint::RingChart" name="RingChart" native="true"/>
+   </item>
+   <item row="1" column="1">
+    <widget class="QSint::BarChartPlotter" name="TrendChart" native="true"/>
+   </item>
+   <item row="1" column="2">
+    <widget class="QSint::BarChartPlotter" name="StackedChart" native="true"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QSint::BarChartPlotter</class>
+   <extends>QWidget</extends>
+   <header location="global">QSintCharts</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QSint::PieChart</class>
+   <extends>QWidget</extends>
+   <header location="global">QSintCharts</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QSint::RingChart</class>
+   <extends>QWidget</extends>
+   <header location="global">QSintCharts</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
